@@ -1,0 +1,17 @@
+bure5kzam:
+  name: "bure5kzam"
+  bio: "리눅스 하고 싶은데 회사에서 C# 쓰라네"
+  avatar: "/assets/images/bio-photo-2.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:billyrick@rick.com"
+
+MAC-10-ingram:
+  name: "mac10"
+  bio: "나는 게똥벌레"
+  avatar: "/assets/images/bio-photo.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:cornelius@thewhip.com"
