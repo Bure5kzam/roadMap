@@ -7,7 +7,6 @@ author:
 tags: [topic]
 summary: 
 DOM-id: exampleModal2
-link: exampleRect2
 ---
 
 hello hello hello
