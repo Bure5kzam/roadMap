@@ -1,10 +1,12 @@
 ---
-<!-- layout: default -->
 ---
 
 <div
   class="modal right fade"
-  id="{{page.DOM-id}}"
+  {% assign DomId = page.relative_path | split: "/" | shift | pop | push : page.title | join : "-" %}
+  {% assign buttonId = DomId | prepend : "button-" %}
+  {% assign modalId =  DomId | prepend : "modal-" %}
+  id="{{modalId}}"
   tabindex="1"
   aria-labelledby="exampleModalLabel"
   aria-hidden="true"

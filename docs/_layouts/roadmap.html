@@ -1,36 +1,53 @@
 ---
 layout: default
 ---
+<!-- 로드맵 그래프를 보여주는 레이아웃 -->
 
 <!-- ! 모달에 스타일 추가하기 -->
 <!-- ! 버튼 호버링시 커서 변경 -->
-<div id="roadmap__wrapping">
+<div id="roadmap__wrapping"> <!-- Assign topic posts -->
+  <!-- 로드맵 콜렉션 사용하기 -->
+  <!-- {{site.roadmap}} -->
+  
+  
+  {{ content }}
 
-  <!-- Assign topic posts -->
-  {{content}}
-  <!-- 토픽으로 사용될 포스트들을 변수에 등록하는 과정 -->
-  {% for tag in site.tags %} {% if tag[0] == "topic" %} {% assign posts = tag[1]
-  %}{% endif %} {% endfor %}
-  {{pos}}
+  <!-- (23.03.01) 모달 폼 생성 로직 -->
+  <!-- _roadmap 디렉토리에 있는 토픽들을 생성
+  Id는 디렉토리 경로를 참조해 부여하며, "modal-{카테고리}-{메인토픽}-{서브토픽}" 포맷을 따름 -->
 
-  <!-- Add topic -->
-  <!-- 노드 클릭시 보여줄 모달 폼을 구현하는 코드 -->
-  {% for post in posts %} 
-    {{ post }}
+  {% for a in site.roadmap %}
+    {% assign DomId = a.relative_path | split: "/" | shift | pop | push : a.title | join : "-" %}
+    {% assign buttonId = DomId | prepend : "button-" %}
+    {% assign modalId =  DomId | prepend : "modal-" %}
+
+    {{a}}
+
   {% endfor %}
-
   
 </div>
-`
+
+
+</div>
 
 <script>
-  const rect = document.querySelector("#subtopic-linux1");
-  rect.addEventListener("click", (event) => {
-    $("#exampleModal1").appendTo("body").modal("show");
-  });
+  console.log("start")
 
-  const rect2 = document.querySelector("#subtopic-linux2");
-  rect2.addEventListener("click", (event) => {
-    $("#exampleModal2").appendTo("body").modal("show");
-  });
+  // (23.03.01) SVG 파일 클릭 이벤트 생성하는 스크립트
+  // SVG의 파일에서 ID가 "modal-{카테고리}-{메인토픽}-{서브토픽}" 인 객체와 "modal-{카테고리}-{메인토픽}-{서브토픽}" 인 객체간의 팝업 이벤트 구현
+  {% for a in site.roadmap %}
+
+    {% assign DomId = a.relative_path | split: "/" | shift | pop | push : a.title | join : "-" %}
+    {% assign buttonId = DomId | prepend : "button-" %}
+    {% assign modalId =  DomId | prepend : "modal-" %}
+
+    console.log("{{buttonId}}");
+    console.log("{{modalId}}");
+
+    rect = document.querySelector("#{{buttonId}}");
+    rect.addEventListener("click", (event) => {
+      $("#{{modalId}}").appendTo("body").modal("show");
+    });
+
+  {% endfor %}
 </script>
