@@ -1,0 +1,36 @@
+---
+---
+
+<div
+  class="modal right fade"
+  {% assign DomId = page.relative_path | split: "/" | shift | pop | push : page.title | join : "-" %}
+  {% assign buttonId = DomId | prepend : "button-" %}
+  {% assign modalId =  DomId | prepend : "modal-" %}
+  id="{{modalId}}"
+  tabindex="1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          {{page.title}}
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">{{content}}</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

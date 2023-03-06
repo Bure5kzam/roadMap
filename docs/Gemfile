@@ -9,3 +9,5 @@ gem "kramdown-parser-gfm", "~> 1.1"
 gem "sass-embedded", "~> 1.57"
 
 gem "wdm", "~> 0.1.1"
+
+gem 'bootstrap', '~> 5.2.2'
