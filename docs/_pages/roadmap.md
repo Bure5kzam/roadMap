@@ -3,9 +3,6 @@ title: "Roadmap"
 layout: roadmap
 permalink: /roadmap/
 ---
-
-# Title
-
 <svg width="974" height="483" viewBox="0 0 974 483" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="974" height="483" fill="#F5F5F5"/>
 <path id="Vector 1" d="M627 0V109V139.5M9.00003 482C-23 329.2 53 292.333 95 293C122.333 293 193.6 293 260 293C486.4 295.4 599 212 627 170V139.5M627 139.5L807 58" stroke="black"/>
