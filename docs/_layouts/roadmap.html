@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 ---
 <!-- 로드맵 그래프를 보여주는 레이아웃 -->
 
@@ -35,6 +35,7 @@ layout: default
 
   // (23.03.01) SVG 파일 클릭 이벤트 생성하는 스크립트
   // SVG의 파일에서 ID가 "modal-{카테고리}-{메인토픽}-{서브토픽}" 인 객체와 "modal-{카테고리}-{메인토픽}-{서브토픽}" 인 객체간의 팝업 이벤트 구현
+  console.log("{{site}}")
   {% for a in site.roadmap %}
 
     {% assign DomId = a.relative_path | split: "/" | shift | pop | push : a.title | join : "-" %}

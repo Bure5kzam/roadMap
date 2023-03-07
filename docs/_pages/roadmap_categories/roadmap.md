@@ -1,7 +1,10 @@
 ---
 title: "Roadmap"
 layout: roadmap
-permalink: /roadmap/
+classes: wide
+permalink: /roadmap/linux
+sidebar:
+    nav: "roadmap-categories"
 ---
 <svg width="974" height="483" viewBox="0 0 974 483" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="974" height="483" fill="#F5F5F5"/>

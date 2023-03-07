@@ -4,7 +4,7 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
   - title: "Roadmap"
-    url: /roadmap/
+    url: /roadmap/linux
 
   - title: "Posts"
     url: /categories/
@@ -17,3 +17,8 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+roadmap-categories:
+  - title : linux
+    url : /roadmap/linux
+  - title : devops
