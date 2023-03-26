@@ -1,5 +1,5 @@
 ---
-title: 리눅스 접속중인 유저 모니터링 하기
+title: 우분투 접속중인 유저 모니터링 하기
 category: linux
 author: Bure5kzam
 tags: [linux, user]
@@ -12,7 +12,7 @@ summary: 접속중인 리눅스 사용자들 조회하기
 
 - who
 - w
-- users
+- usersp
 
 ```console
 [root@localhost ~]# who -aH

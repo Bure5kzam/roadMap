@@ -1,5 +1,5 @@
 ---
-title: 리눅스 사용자 계정 추가하기 
+title: 우분투 사용자 계정 추가하기 
 category: linux
 author: Bure5kzam
 tags: [linux, user]

@@ -1,5 +1,5 @@
 ---
-title: 리눅스 사용자 정보 수정하기
+title: 우분투 사용자 정보 수정하기
 category: linux
 author: Bure5kzam
 tags: [linux, user]

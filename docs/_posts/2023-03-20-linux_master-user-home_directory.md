@@ -1,5 +1,5 @@
 ---
-title: 리눅스 사용자 홈 디렉토리
+title: 우분투 사용자 홈 디렉토리
 category: linux
 author: Bure5kzam
 tags: [linux, user]
