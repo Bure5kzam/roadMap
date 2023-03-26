@@ -104,7 +104,11 @@ useradd -D [options]
 | -f, --inactive    | expired 되면 몇일 뒤에 계정을 사용할 수 없게할지 정합니다. 필드는 INACTIVE. |
 
 
+`useradd`는 기능이 많은 명령어입니다.
+
+본 글에 기재되지 않은 내용도 많으니 한번쯤은 매뉴얼을 직접 확인하시는걸 추천드립니다.
 
 ## Reference
 
 [die.net, useradd 매뉴얼](https://linux.die.net/man/8/useradd)
+[Red hat, user management](https://access.redhat.com/documentation/ko-kr/red_hat_enterprise_linux/6/html/deployment_guide/s2-users-cl-tools)    
